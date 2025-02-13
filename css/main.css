@@ -1,3 +1,91 @@
+/* Browser/Display fixes */
+html,
 body {
-    color: red;
+    margin: 0;
+}
+
+/* Box sizing fix taken from https://css-tricks.com/almanac/properties/b/box-sizing/ */ 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* These selectors target the HTML elements and will apply to every iteration of those elements */
+body {
+    color: red; 
+}
+
+h1 {
+    font-size: 48px;
+}
+
+p {
+    max-width: 600px;
+}
+
+a {
+    background-color: red;
+    color: white;
+}
+
+a:hover {
+    background-color: black;
+    color: 
+}
+
+/* These target the value of the class="" property of our HTML elements, referred to as class names. */
+/* You target class names in our CSS by putting a period . before the name of the class. */
+
+.note {
+    border-color: red;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 14px;
+    padding: 18px;
+}
+
+.special {
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+h2.special {
+    text-align: center;
+}
+
+p.special {
+    max-width: none;
+}
+
+.note.special {
+    border-color: green;
+    color: green;
+}
+
+.note.special a {
+    background-color: green;
+    color: white;
+}
+
+.note.special a:hover {
+    background-color: black;
+    color: green;
+}
+
+/* These target the value of the id="" property on our HTML elements. These should be unique and only used once on any given HTML page. */
+/* You target ids in our CSS by putting a hash # before the name of the id. */
+
+#special-note {
+    background-color: blue;
+    border: none;
+    color: yellow;
+}
+
+#special-note a {
+    background-color: yellow;
+    color: blue;
+}
+
+#special-note a:hover {
+    background-color: black;
+    color: yellow;
 }
