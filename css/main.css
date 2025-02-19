@@ -35,6 +35,24 @@ a:hover {
 /* These target the value of the class="" property of our HTML elements, referred to as class names. */
 /* You target class names in our CSS by putting a period . before the name of the class. */
 
+.intro {
+    align-content: center;
+    background-image: url("../images/pear-wee.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+    justify-content: center;
+    min-height: 300px;
+    text-align: center;
+}
+
+.intro > * {
+    width: 100%;
+}
+
 .note {
     border-color: red;
     border-style: solid;
