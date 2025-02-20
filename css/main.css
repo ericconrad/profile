@@ -45,6 +45,10 @@ a:hover {
     color: var(--accent-contrast-color);
 }
 
+img {
+    max-width: 100%;
+}
+
 /* These target the value of the class="" property of our HTML elements, referred to as class names. */
 /* You target class names in our CSS by putting a period . before the name of the class. */
 
@@ -69,6 +73,33 @@ a:hover {
     min-height: 300px;
     text-align: center;
 }
+
+/* Styles for the About section */
+.about .center {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about h2 {
+    flex-basis: 100%;
+}
+
+.fact {
+    flex-grow: 0;
+    flex-basis: 31.5%;
+}
+
+/* "+" Targets an element with a class of, "fact" only if it immediately follows (is a direct sibling of) another element that also has a class of, "fact." */
+.fact + .fact {
+    margin-top: 30px;
+}
+
+.fact + .fact + .fact {
+    margin-top: 60px;
+}
+
 
 .note {
     border-color: var(--main-color);
