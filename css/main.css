@@ -1,3 +1,11 @@
+:root {
+    --main-color: rgb(6, 91, 72);
+    --main-contrast-color: rgb(255, 235, 200);
+    --accent-color: rgb(228, 145, 29);
+    --accent-contrast-color: rgb(0, 29, 30);
+}
+
+
 /* Browser/Display fixes */
 html,
 body {
@@ -11,7 +19,12 @@ body {
 
 /* These selectors target the HTML elements and will apply to every iteration of those elements */
 body {
-    color: red; 
+    background-color: var(--main-contrast-color);
+    color: red; /* Defines color using named value */
+    color: #FF0000; /* Defines color using hex code */
+    color: rgb(255, 0, 0); /* Defines color using RGB value */
+    color: rgba(255, 0, 0, 0.5); /* Defines color using RGB plus Alpha (opacity) vaule */
+    color: var(--main-color);
 }
 
 h1 {
@@ -19,24 +32,32 @@ h1 {
 }
 
 p {
-    max-width: 600px;
+    /* max-width: 600px; */
 }
 
 a {
-    background-color: red;
-    color: white;
+    background-color: var(--main-color);
+    color: var(--main-contrast-color);
 }
 
 a:hover {
-    background-color: black;
-    color: 
+    background-color: var(--accent-color);
+    color: var(--accent-contrast-color);
 }
 
 /* These target the value of the class="" property of our HTML elements, referred to as class names. */
 /* You target class names in our CSS by putting a period . before the name of the class. */
 
+.center {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 80%;
+}
+
 .intro {
     align-content: center;
+    background-blend-mode: multiply;
+    background-color: var(--main-color);
     background-image: url("../images/pear-wee.jpg");
     background-position: center;
     background-size: cover;
@@ -49,12 +70,8 @@ a:hover {
     text-align: center;
 }
 
-.intro > * {
-    width: 100%;
-}
-
 .note {
-    border-color: red;
+    border-color: var(--main-color);
     border-style: solid;
     border-width: 2px;
     font-size: 14px;
@@ -93,17 +110,17 @@ p.special {
 /* You target ids in our CSS by putting a hash # before the name of the id. */
 
 #special-note {
-    background-color: blue;
+    background-color: var(--main-color);
     border: none;
-    color: yellow;
+    color: var(--main-contrast-color);
 }
 
 #special-note a {
-    background-color: yellow;
-    color: blue;
+    background-color: var(--main-contrast-color);
+    color: var(--main-color);
 }
 
 #special-note a:hover {
-    background-color: black;
-    color: yellow;
+    background-color: var(--accent-color);
+    color: var(--accent-contrast-color);
 }
