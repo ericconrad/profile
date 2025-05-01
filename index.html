@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Project 1 Profile Page</title>
+        <link href="vendor/lightbox2/css/lightbox.min.css" rel="stylesheet" />
         <link href="css/main.css" rel="stylesheet" />
     </head>
 
@@ -24,7 +25,9 @@
 
                 <div class="fact">
 
-                    <img src="images/pear-wee.jpg">
+                    <a href="images/pear-wee.jpg" data-lightbox="pear-wee" data-title="Original Pear Wee Herman composite image.">
+                        <img src="images/pear-wee.jpg">
+                    </a>
 
                     <h3>Short and sweet factoid about this person/place/thing.</h3>
 
@@ -33,7 +36,9 @@
 
                 <div class="fact">
 
-                    <img src="images/pear-wee.jpg">
+                    <a href="images/pear-wee-2.jpg" data-lightbox="pear-wee" data-title="Pear Wee Herman composite image after one round of datamoshing.">
+                        <img src="images/pear-wee-2.jpg">
+                    </a>
 
                     <h3>Short and sweet factoid about this person/place/thing.</h3>
 
@@ -42,7 +47,9 @@
 
                 <div class="fact">
 
-                    <img src="images/pear-wee.jpg">
+                    <a href="images/pear-wee-3.jpg" data-lightbox="pear-wee" data-title="Pear Wee Herman composite image after two rounds of datamoshing.">
+                        <img src="images/pear-wee-3.jpg">
+                    </a>
 
                     <h3>Short and sweet factoid about this person/place/thing.</h3>
 
@@ -62,5 +69,8 @@
         <h2 class="special">This h2 element has a class of, "special."</h2>
 
         <p class="special">This is my first HTML page that I have ever made. It is the best page ever and everyone agrees. I bet you wish you knew how to write <a href="https://google.com">HTML</a> as good as me!</p>
+    
+        <!-- Javascript goes here -->
+        <script src="vendor/lightbox2/js/lightbox-plus-jquery.min.js"></script>
     </body>
 </html>
