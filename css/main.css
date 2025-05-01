@@ -109,6 +109,10 @@ img {
     flex-basis: 31.5%;
 }
 
+.fact a img {
+    display: block;
+}
+
 /* "+" Targets an element with a class of, "fact" only if it immediately follows (is a direct sibling of) another element that also has a class of, "fact." */
 .fact + .fact {
     margin-top: 30px;
